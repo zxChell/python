@@ -113,11 +113,6 @@
 #a = int(input())
 #print(1 - a)
 
-
-# Test 17
-#a = int(input())
-#print((a//2+1)*2)
-
 # Test 17
 #v = int(input())
 #t = int(input())
