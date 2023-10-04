@@ -91,3 +91,36 @@
 # print("Сумма цифр:",s)
 # print("Произведение цифр: ",p)
 
+# Test 13
+#n = input()
+#print('   _~_    ' * int(n))
+#print('  (o o)   ' * int(n))
+#print(' /  V  \  ' * int(n))
+#print('/(  _  )\ ' * int(n))
+#print('  ^^ ^^   ' * int(n))
+#abc = int(input())
+#x = 1
+#n = (x // 10 ** k) % 10
+#print(n)
+
+# Test 15
+#a = int(input())
+#h = a % (60 * 24) // 60
+#m = a % 60
+#print(h, m)
+
+# Test 16
+#a = int(input())
+#print(1 - a)
+
+
+# Test 17
+#a = int(input())
+#print((a//2+1)*2)
+
+# Test 17
+#v = int(input())
+#t = int(input())
+#a = v * t
+#n = a // 109
+#print(-(109 * n - a))
