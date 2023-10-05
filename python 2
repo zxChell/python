@@ -1,0 +1,51 @@
+# Test 1
+
+# x = 'Hello'
+
+# print(x[2])
+
+# print(x[-2])
+
+# print(x[0:])
+
+# print(x[0:-2])
+
+# print(x[::2])
+
+# print(x[1::2])
+
+# print(x[::-1])
+
+# print(x[::-2])
+
+# print(len(x))
+
+# Test 2
+
+# x = 'hello'
+# y = ' '
+# z = 'world!'
+# s = x + y + z
+# print(s.count(' ') + 1)
+
+# x = 'hello world!'
+# y = (len(x)//2)
+# print(x[y:] + x[:y])
+
+# x = input()
+# y = x.find('f')
+# z = x.rfind('f')
+# print(y,z)
+
+# x = input()
+# x = x[:x.find('h')] + x[x.rfind('h') + 1:]
+# print(x)
+
+# print(input().replace('1', 'One'))
+
+# print(input().replace('@', ''))
+
+
+# print(input().replace('h', 'H'))
+# x = input()
+# if (x.find == 'h' and x.rfind == 'h'):
