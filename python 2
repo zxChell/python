@@ -1,3 +1,5 @@
+#Строки
+
 # Test 1
 
 # x = 'Hello'
@@ -49,3 +51,5 @@
 # print(input().replace('h', 'H'))
 # x = input()
 # if (x.find == 'h' and x.rfind == 'h'):
+
+#Условные операторы
