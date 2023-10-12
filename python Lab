@@ -1,0 +1,57 @@
+# Lab 1
+
+# def is_alive(health):
+#     if health < 0 or health == 0:
+#         return False
+#     else:
+#         return True
+# print(is_alive(int(input())))
+
+# Lab 2
+
+# def season_events(number_of_month):
+#     if number_of_month == 12:
+#         print('Вы родились в ' + 'december ' + 'За окном падает белый снег')
+#     elif number_of_month == 1:
+#         print('Вы родились в ' + 'january ' + 'За окном падает белый снег')
+#     elif number_of_month == 2:
+#         print('Вы родились в ' + 'february ' + 'За окном падает белый снег')
+#     elif number_of_month == 3:
+#         print('Вы родились в ' + 'march ' + 'Птицы пели прекрасные песни')
+#     elif number_of_month == 4:
+#         print('Вы родились в ' + 'april ' + 'Птицы пели прекрасные песни')
+#     elif number_of_month == 5:
+#         print('Вы родились в ' + 'may ' + 'Птицы пели прекрасные песни')
+#     elif number_of_month == 6:
+#         print('Вы родились в ' + 'june ' + 'Солнце светило ярче чем когда-либо')
+#     elif number_of_month == 7:
+#         print('Вы родились в ' + 'july ' + 'Солнце светило ярче чем когда-либо')
+#     elif number_of_month == 8:
+#         print('Вы родились в ' + 'august ' + 'Солнце светило ярче чем когда-либо')
+#     elif number_of_month == 9:
+#         print('Вы родились в ' + 'september ' + 'Урожай был невероятным')
+#     elif number_of_month == 10:
+#         print('Вы родились в ' + 'october ' + 'Урожай был невероятным')
+#     elif number_of_month == 11:
+#         print('Вы родились в ' + 'november ' + 'Урожай был невероятным')
+#     else:
+#         print('Тебя же попросили ввести реальный номер месяца')
+#
+# season_events(int(input('Требуется ввести реальный номер месяца  ')))
+
+# Lab 3
+
+# def check_pass(pswd):
+    # if len(pswd) == 8:
+    #     print('Пороль идеален')
+    # else:
+    #     print('пароль плох')
+# check_pass(input())
+
+
+def check_pass(pswd):
+    if pswd.count():
+        print('Пороль идеален')
+    else:
+        print('Пороль плох')
+check_pass(input())
