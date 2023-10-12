@@ -1,0 +1,50 @@
+# number 1
+
+# def distance(**kwargs):
+#     res = ((kwargs['x2'] - kwargs['x1']) ** 2 + (kwargs['y2'] - kwargs['y1']) ** 2) ** 0.5
+#     return res
+#
+# x1 = int(input())
+# y1 = int(input())
+# x2 = int(input())
+# y2 = int(input())
+#
+# print(distance(x2=int(input()), y2=int(input()), x1=int(input()), y1=int(input())))
+
+
+
+# number 2
+
+# def factorial(n):
+#     if n == 0:
+#         return 1
+#     else:
+#         return  n * factorial(n - 1)
+# print(factorial(5))
+
+
+# def fib(n):
+#     if n == 0:
+#         return 1
+#     elif n == 1:
+#         return 1
+#     else:
+#         return  fib(n - 1) + fib(n - 2)
+#
+# print(fib((int(input()))))
+
+# number 3
+
+# def power(a, n):
+#     res = 1
+#     if n > 0:
+#         for i in range(n):
+#             res *= a
+#             return  res
+#     elif n < 0:
+#         for i in range(-n):
+#             res /= a
+#         return  res
+#     return  res
+#
+# print(power(int(input()), int(input())))
