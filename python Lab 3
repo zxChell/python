@@ -1,0 +1,370 @@
+class Car:
+
+    def __init__(self, _year_model, take):
+        self.__year_model = _year_model
+        self.take = take
+        self._speed = 0
+
+    def accelerate(self):
+        self._speed += 5
+        print(f'Скорость = {self._speed}')
+
+    def break_(self):
+        self._speed -= 5
+        print(f'Скорость = {self._speed}')
+
+    def get_speed(self):
+        return self._speed
+
+
+Mers = Car(1999, 'Mers')
+for i in range(5):
+    Mers.accelerate()
+    Mers.break_()
+
+print(Mers.get_speed())
+
+class Pet:
+
+    def __init__(self, __name, __animal__type, __age):
+        self.__name = __name
+        self.__animal__type = __animal__type
+        self.__age = __age
+
+    def set_name(self, new__name):
+        self.__name = new__name
+
+    def set__animal(self, new__animal):
+        self.__animal__type = new__animal
+
+    def set__age(self, new__age):
+        self.__age = new__age
+
+    def get_name(self):
+        return self.__name
+
+    def get__animal(self):
+        return self.__animal__type
+
+    def get__age(self):
+        return self.__age
+
+
+x = Pet
+
+pet__name = input()
+pet__animal__type = input()
+pet__age = input()
+
+
+class Info:
+
+    def __init__(self, name, adre, age, numbers):
+        self.name = name
+        self.adre = adre
+        self.age = age
+        self.numbers = numbers
+
+    def set_name(self, new_name):
+        self.name = new_name
+
+    def set_adre(self, new_adre):
+        self.adre = new_adre
+
+    def set_age(self, new_age):
+        self.age = new_age
+
+    def set_numbers(self, new_numbers):
+        self.numbers = new_numbers
+
+    def get_name(self):
+        return self.name
+
+    def get_adre(self):
+        return self.adre
+
+    def get_age(self):
+        return self.age
+
+    def get_numbers(self):
+        return self.numbers
+
+    def __str__(self):
+        return (f'Info обо мне: \n'
+                f'Имя = {self.name} \n'
+                f'Адрес = {self.adre} \n'
+                f'Возрост = {self.age} \n'
+                f'тел = {self.numbers} \n' )
+
+
+x = Info('Вася  ', 'Улица Пушкина дом Колотушкинно  ', 40,  88005553535)
+y = Info('Петя ', 'Улица Пушкина дом наверно Колотушкинна  ', 45,  89127018780)
+z = Info('Пупкин ', 'Улица Пушкина дом наверно Колотушкинна хз ', 46, 4363463463 )
+print(x)
+print(y)
+print(z)
+
+class Employee:
+
+    def __init__(self, name, num, department, title):
+        self.name = name
+        self.num = num
+        self.department = department
+        self.title = title
+
+    def set_name(self, new_name):
+        self.name = new_name
+
+    def set_num(self, new_num):
+        self.num = new_num
+
+    def set_department(self, new_department):
+        self.department = new_department
+
+    def set_title(self, new_title):
+        self.title = new_title
+
+    def get_name(self):
+        return self.name
+
+    def get_num(self):
+        return self.num
+
+    def get_department(self):
+        return self.department
+
+    def get_title(self):
+        return self.title
+
+    def __str__(self):
+        return f'name = {self.name}, num = {self.num}, department = {self.department}, title = {self.title}'
+
+
+x = Employee('Сьюзан', 47899, 'бухгалтер', 'вице-презедент')
+y = Employee('Сьюзан', 47899, 'бухгалтер', 'вице-презедент')
+z = Employee('Сьюзан', 47899, 'бухгалтер', 'вице-презедент')
+print(x)
+print(y)
+print(z)
+
+class Sell:
+
+    def __init__(self, product, quantity, price):
+        self.product = product
+        self.quantity = quantity
+        self.price = price
+
+    def set_product(self, new_product):
+        self.product = new_product
+
+    def set_quantity(self, new_quantity):
+        self.quantity = new_quantity
+
+    def set_price(self, new_price):
+        self.price = new_price
+
+    def get_product(self):
+        return self.price
+
+    def get_quantity(self):
+        return self.quantity
+
+    def get_price(self):
+        return self.price
+
+    def __str__(self):
+        return f'product = {self.product}, quantity = {self.quantity}, price = {self.price}'
+
+
+x = Sell('Пиджак', 12, 59.95)
+y = Sell('Дизайнерские джинсы', 40, 34.95)
+z = Sell('Рубашка', 20, 24.95)
+
+print(x)
+print(y)
+print(z)
+
+class Procedure:
+
+    def __init__(self, name_procedure, data_procedure, doctor_name, sell):
+        self.name_procedure = name_procedure
+        self.data_procedure = data_procedure
+        self.doctor_name = doctor_name
+        self.sell = sell
+
+    def set_new_name_procedure(self, new_name_procedure):
+        self.name_procedure = new_name_procedure
+
+    def set_data_procedure(self, new_data_procedure):
+        self.data_procedure = new_data_procedure
+
+    def set_doctor_name(self, new_doctor_name):
+        self.doctor_name = new_doctor_name
+
+    def set_sell(self, new_sell):
+        self.sell = new_sell
+
+    def get_sell(self):
+        return self.sell
+
+    def get_doctor_name(self):
+        return self.doctor_name
+
+    def get_data_procedure(self):
+        return self.data_procedure
+
+    def get_name_procedure(self):
+        return self.name_procedure
+
+    def __str__(self):
+        return f'Название процедуры = {self.name_procedure}\nДата процедуры = {self.data_procedure}\nИмя доктора который производил процедуру = {self.doctor_name}\nСтоимость процедуры = {self.sell}'
+
+
+class Patient:
+
+    def __init__(self, name_x, name_y, name_z, adre, city, region, postcode, num):
+        self.name_x = name_x
+        self.name_y = name_y
+        self.name_z = name_z
+        self.adre = adre
+        self.city = city
+        self.region = region
+        self.postcode = postcode
+        self.num = num
+
+    def set_name_x(self, new_name_x):
+        self.name_x = new_name_x
+
+    def set_name_y(self, new_name_y):
+        self.name_y = new_name_y
+
+    def set_name_z(self, new_name_z):
+        self.name_z = new_name_z
+
+    def set_adre(self, new_adre):
+        self.adre = new_adre
+
+    def set_city(self, new_city):
+        self.city = new_city
+
+    def set_region(self, new_region):
+        self.region = new_region
+
+    def set_postcode(self, new_postcode):
+        self.postcode = new_postcode
+
+    def num(self, new_num):
+        self.num = new_num
+
+    def get_name_x(self):
+        return self.name_x
+
+    def get_name_y(self):
+        return self.name_y
+
+    def get_name_z(self):
+        return self.name_z
+
+    def get_adre(self):
+        return self.adre
+
+    def get_city(self):
+        return self.city
+
+    def get_region(self):
+        return self.region
+
+    def get_postcode(self):
+        return self.postcode
+
+    def get_num(self):
+        return self.num
+
+    def __str__(self):
+        return f'Имя = {self.name_x}, Фамилия = {self.name_y}, Отчество = {self.name_z}\nАдрес = {self.adre}, Город = {self.city}, Область = {self.region}, Почтовый индекс = {self.postcode}\nНомер телефона = {self.num} \n  \n Экстренный вызов: \n Имя = {self.name_x} \n Номер телефона = {self.num}\n \n'
+
+
+x = Patient('Вася', 'Пупкин', 'Иванович', 'производсто 5', 'Москва', 'Московская область', '653436', '88005553535')
+y = Procedure('Врачебный осмотр', 'сегодня', 'Dima', 1500)
+
+print(x)
+print(y)
+
+import random
+
+
+class Question:
+
+    def __init__(self, question, ans1, ans2, ans3, ans4, right):
+        self.question = question
+        self.ans1 = ans1
+        self.ans2 = ans2
+        self.ans3 = ans3
+        self.ans4 = ans4
+        self.right = right
+
+    def __str__(self):
+        return f'{self.question}\n{self.ans1}\n{self.ans2}\n{self.ans3}\n{self.ans4}'
+
+
+class Victorina:
+
+    count = 1
+
+    def __init__(self, player1=0, player2=0):
+        self.player1 = player1
+        self.player2 = player2
+
+    def askey(self, qw):
+        print(qw)
+        x = input('Введите ответ: ')
+        if x == qw.right:
+            if self.count == 1:
+                self.player1 += 1
+                self.count = 2
+            elif self.count == 2:
+                self.player2 += 1
+                self.count = 1
+
+    def win(self):
+        print(f'player1 {self.player1}')
+        print(f'player2 {self.player2}')
+        if self.player1 > self.player2:
+            print(f'player1 win!')
+        elif self.player2 > self.player1:
+            print(f'player2 win!')
+        else:
+            print(f'draw')
+
+
+q1 = Question('Do you like to do home work?', 'yes', 'no', 'sometimes', 'I like Python!', '4')
+q2 = Question('Can you fly?', 'yes', 'no', 'everyday', 'in my dream', '4')
+q3 = Question('Do you like to do home work?', 'yes', 'no', 'sometimes', 'I like Python!', '4')
+q4 = Question('Can you fly?', 'yes', 'no', 'everyday', 'in my dream', '4')
+q5 = Question('Do you like to do home work?', 'yes', 'no', 'sometimes', 'I like Python!', '4')
+q6 = Question('Can you fly?', 'yes', 'no', 'everyday', 'in my dream', '4')
+q7 = Question('Do you like to do home work?', 'yes', 'no', 'sometimes', 'I like Python!', '4')
+q8 = Question('Can you fly?', 'yes', 'no', 'everyday', 'in my dream', '4')
+q9 = Question('Do you like to do home work?', 'yes', 'no', 'sometimes', 'I like Python!', '4')
+q10 = Question('Can you fly?', 'yes', 'no', 'everyday', 'in my dream', '4')
+
+listkw = []
+
+listkw.append(q1)
+listkw.append(q2)
+listkw.append(q3)
+listkw.append(q4)
+listkw.append(q5)
+listkw.append(q6)
+listkw.append(q7)
+listkw.append(q8)
+listkw.append(q9)
+listkw.append(q10)
+random.shuffle(listkw)
+y = Victorina()
+
+
+for i in listkw:
+    y.askey(i)
+
+y.win()
